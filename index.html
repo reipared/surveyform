@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Meta Tags -->
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- Title -->
+		<title>Document</title>
+
+		<!-- Styles -->
+		<link rel="stylesheet" href="styles/styles.css" />
+
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+
+	<!-- Body -->
+	<body>
+		<h1 id="title">Rei Survey Form</h1>
+		<p id="description">
+			Thank you for taking the time to help us improve the platform
+		</p>
+		<form action="https://survey-form.freecodecamp.rocks/" id="survey-form">
+			<!-- Personal details -->
+			<fieldset>
+				<label for="name" id="name-lable"
+					>Name
+					<input
+						type="text"
+						id="name"
+						placeholder="Enter your name"
+						required
+						class="textinput"
+				/></label>
+				<label for="email" id="email-label"
+					>Email
+					<input
+						type="email"
+						id="email"
+						placeholder="Enter your Email"
+						class="textinput"
+						required
+				/></label>
+				<label for="number" id="number-label"
+					>Age
+					<input
+						type="number"
+						class="textinput"
+						id="number"
+						min="13"
+						max="120"
+						placeholder="Age (optional)"
+				/></label>
+			</fieldset>
+
+			<!-- Professional Details -->
+			<fieldset>
+				<label for="dropdown"
+					>Which option best describes your current role?
+					<select id="dropdown">
+						<option value="">(select one)</option>
+						<option value="1">Student</option>
+						<option value="2">Full Time Job</option>
+						<option value="3">Full Time Learnder</option>
+						<option value="4">Prefer Not To Say</option>
+						<option value="5">Other</option>
+					</select>
+				</label>
+			</fieldset>
+
+			<!-- Recommendations -->
+			<fieldset>
+				<label for="recommend"
+					>Would you recommend freeCodeCamp to a friend?</label
+				>
+				<label for="recommend-definitely"
+					><input
+						type="radio"
+						id="recommen-definitely"
+						name="recommend-type"
+						class="inline"
+						value="definitely"
+						aria-label="recommend definitely"
+					/>Definitely</label
+				>
+				<label for="recommend-maybe"
+					><input
+						type="radio"
+						id="recommend-maybe"
+						name="recommend-type"
+						class="inline"
+						value="maybe"
+						aria-label="recommend maybe"
+					/>
+					Maybe</label
+				>
+				<label for="recommend-notsure"
+					><input
+						type="radio"
+						id="recommend-notsure"
+						name="recommend-type"
+						class="inline"
+						value="notsure"
+						aria-label="recommend not sure"
+					/>
+					Not Sure</label
+				>
+			</fieldset>
+
+			<!-- Favorites -->
+			<fieldset>
+				<label for="dropdown-favorite">
+					What is your favorite feature of freeCodeCamp?
+					<select id="dropdown-favorite">
+						<option value="">(select one)</option>
+						<option value="1">Challenges</option>
+						<option value="2">Projects</option>
+						<option value="3">Community</option>
+						<option value="4">Open Source</option>
+					</select>
+				</label>
+			</fieldset>
+
+			<!-- Improvements -->
+			<fieldset>
+				<label for="improve"> What would you like to see improved?</label
+				><label for="improve" class="smallimprove"
+					>(Check all that apply)</label
+				>
+				<label for="front-end-projects"
+					><input
+						type="checkbox"
+						id="front-end-projects"
+						value="1"
+						aria-label="front end projects checkbox"
+					/>
+					Front-End Projects</label
+				>
+				<label for="back-end-projects"
+					><input
+						type="checkbox"
+						id="back-end-projects"
+						value="2"
+						aria-label="back end projects checkbox"
+					/>
+					Back-End Projects</label
+				>
+				<label for="data-visualization"
+					><input
+						type="checkbox"
+						id="data-visualization"
+						value="3"
+						aria-label="data visualization checkbox"
+					/>
+					Data Visualization</label
+				>
+				<label for="challenges"
+					><input
+						type="checkbox"
+						id="challenges"
+						value="4"
+						aria-label="challenges checkbox"
+					/>
+					Challenges</label
+				>
+				<label for="open-source-community"
+					><input
+						type="checkbox"
+						id="open-source-community"
+						value="5"
+						aria-label="open source community checkbox"
+					/>
+					Open Source Community</label
+				>
+				<label for="gitter-help-rooms"
+					><input
+						type="checkbox"
+						id="gitter-help-rooms"
+						value="6"
+						aria-label="gitter help rooms checkbox"
+					/>
+					Gitter Help Rooms</label
+				>
+				<label for="videos"
+					><input type="checkbox" id="videos" value="7" aria-label="videos" />
+					Videos</label
+				>
+				<label for="city-meetups"
+					><input
+						type="checkbox"
+						id="city-meetups"
+						value="8"
+						aria-label="city meetups checkbox"
+					/>
+					City Meetups</label
+				>
+				<label for="wiki"
+					><input
+						type="checkbox"
+						id="wiki"
+						value="9"
+						aria-label="wiki checkbox"
+					/>
+					Wiki</label
+				>
+				<label for="forum"
+					><input
+						type="checkbox"
+						id="forum"
+						value="10"
+						aria-label="forum checkbox"
+					/>
+					Forum</label
+				>
+				<label for="additional-courses"
+					><input
+						type="checkbox"
+						id="additional-courses"
+						value="11"
+						aria-label="additional courses checkbox"
+					/>
+					Additional Courses</label
+				>
+			</fieldset>
+
+			<!-- Suggestions -->
+			<fieldset>
+				<label for="suggestions"
+					>Any comments or suggestions?
+					<textarea
+						name="suggestions"
+						id="suggestions"
+						cols="45"
+						rows="10"
+						placeholder="Enter your comments or suggestions here..."
+					></textarea>
+				</label>
+			</fieldset>
+			<input
+				type="submit"
+				value="Submit"
+				id="submit"
+				aria-label="submit button"
+			/>
+		</form>
+	</body>
+</html>
